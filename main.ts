@@ -1,5 +1,5 @@
-import { createServer } from "./mod.ts";
+import { createApp } from "./mod.ts";
 
 export default {
-    fetch: createServer({}),
+    fetch: createApp({}),
 };
