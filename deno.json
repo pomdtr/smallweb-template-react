@@ -1,6 +1,9 @@
 {
     "name": "@smallweb/react-template",
     "version": "0.1.0",
+    "exports": {
+        ".": "./mod.ts"
+    },
     "tasks": {
         "install-frontend-deps": "cd frontend && npm install",
         "build-frontend": "cd frontend && npm run build",
