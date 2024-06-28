@@ -1,5 +1,7 @@
-import { createApp } from "./mod.ts";
+import { App } from "./mod.ts";
 
-export default {
-    fetch: createApp({}),
-};
+const app = new App({
+    param1: "value1",
+});
+
+export default app;
