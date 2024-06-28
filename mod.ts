@@ -12,7 +12,7 @@ export class App {
 
     // the class should have a method that returns a fetch function
     // make sure to use an arrow function to keep the context of `this`
-    fetch = (req: Request) => {
+    fetch = (req: Request): Promise<Response> => {
         // here you can do anything with the request
         return serveDir(req, {
             dir,

@@ -6,6 +6,7 @@
       "jsr:@cliffy/flags@1.0.0-rc.4": "jsr:@cliffy/flags@1.0.0-rc.4",
       "jsr:@cliffy/table@1.0.0-rc.4": "jsr:@cliffy/table@1.0.0-rc.4",
       "jsr:@nfnitloop/deno-embedder@1.4.1": "jsr:@nfnitloop/deno-embedder@1.4.1",
+      "jsr:@nfnitloop/deno-embedder@^1.4.1": "jsr:@nfnitloop/deno-embedder@1.4.1",
       "jsr:@std/assert@^0.196.0": "jsr:@std/assert@0.196.0",
       "jsr:@std/assert@^0.221.0": "jsr:@std/assert@0.221.0",
       "jsr:@std/assert@^0.225.0": "jsr:@std/assert@0.225.3",

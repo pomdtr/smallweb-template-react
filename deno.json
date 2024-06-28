@@ -13,6 +13,7 @@
     "publish": {
         "include": [
             "mod.ts",
+            "file_server.ts",
             "dist"
         ]
     }
