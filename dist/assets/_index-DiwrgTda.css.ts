@@ -1,4 +1,4 @@
-import {F} from "jsr:@nfnitloop/deno-embedder@1.4.1/embed.ts"
+import {F} from "jsr:@nfnitloop/deno-embedder@1.4.5/embed.ts"
 export default F({
  size: 1391,
  compression: "gzip",
