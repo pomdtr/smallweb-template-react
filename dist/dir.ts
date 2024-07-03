@@ -1,4 +1,4 @@
-import {E} from "jsr:@nfnitloop/deno-embedder@1.4.5/embed.ts"
+import {E} from "jsr:@nfnitloop/deno-embedder@1.4.7/embed.ts"
 
 export default E({
   "assets/index-DVoHNO1Y.js": () => import("./assets/_index-DVoHNO1Y.js.ts"),

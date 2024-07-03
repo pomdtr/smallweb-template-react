@@ -1,14 +1,14 @@
-import type { Embeds } from "jsr:@nfnitloop/deno-embedder@^1.4.1/embed.ts";
+import type { Embeds } from "jsr:@nfnitloop/deno-embedder@1.4.7/embed.ts";
 import { extname } from "jsr:@std/path@^0.225.0/extname";
 import { contentType } from "jsr:@std/media-types@^0.224.1";
 
 /** Interface for serveDir options. */
-export interface ServeDirParams {
+export interface ServeDirParams<K extends string> {
     /** Serves the files under the given directory root. Defaults to your current directory.
      *
      * @default {"."}
      */
-    dir: Embeds;
+    dir: Embeds<K>;
     /** Specified that part is stripped from the beginning of the requested pathname.
      *
      * @default {undefined}
@@ -51,9 +51,9 @@ export interface ServeDirParams {
     headers?: Headers;
 }
 
-export async function serveDir(
+export async function serveDir<K extends string>(
     req: Request,
-    params: ServeDirParams,
+    params: ServeDirParams<K>,
 ): Promise<Response> {
     const url = new URL(req.url);
     let pathname = url.pathname;
